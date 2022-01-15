@@ -1,0 +1,103 @@
+
+.slider-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.slider-container .slider-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 600px;
+}
+
+.slider-container .background-img {
+  background-image: url("../img/after.jpg");
+}
+
+.slider-container .foreground-img {
+  background-image: url("../img/before.jpg");
+  width: 50%;
+}
+
+.slider-container .slider {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  margin: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-container .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 600px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slider-container .slider::-moz-range-thumb {
+  width: 6px;
+  height: 600px;
+  background: aqua;
+  cursor: pointer;
+}
+
+.slider-container .slider-button {
+  pointer-events: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-container .slider-button:after {
+  content: '';
+  padding: 3px;
+  display: inline-block;
+  border: solid #5D5D5D;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.slider-container .slider-button:before {
+  content: '';
+  padding: 3px;
+  display: inline-block;
+  border: solid #5D5D5D;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}

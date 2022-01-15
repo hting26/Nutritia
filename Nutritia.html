@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutritia</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="Fontawesome/css/all.css">
+  <!-- 字型 -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- animista動畫 -->
+  <link rel="stylesheet" href="./css/animista.css">
+  <!-- animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!-- before-after-slider -->
+  <link rel="stylesheet" href="./css/before-after-slider.css">
+</head>
+
+<body>
+  <!-- <div class="container"> -->
+  <div class="header">
+    <img class="logo" src="http://webdesign-finder.com/nutritia/wp-content/uploads/2018/03/logo.png" alt="">
+    <div class="information">
+      <div class="info">
+        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="body">
+          <h4 class="title">OUR LOCATION</h4>
+          <span class="text">358 Beree St, California</span>
+        </div>
+      </div>
+      <div class="info">
+        <div class="icon"><i class="far fa-clock"></i></div>
+        <div class="body">
+          <h4 class="title">WE ARE OPEN</h4>
+          <span class="text">08:00 - 20:00 </span>
+        </div>
+      </div>
+      <div class="info">
+        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+        <div class="body">
+          <h4 class="title">24/7 IN TOUCH</h4>
+          <span class="text">0 (800) 337 7737</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+  <div id="menu">
+    <label for="toggle-cart"><i class="fas fa-shopping-cart"></i></label>
+    <input type="radio" id="toggle-cart" name="toggle">
+    <div id="cart">
+      <div class="title">Cart</div>
+      <div class="text">No products in the cart.</div>
+    </div>
+
+    <label for="toggle-search"><i class="fas fa-search"></i></label>
+    <input type="radio" id="toggle-search"  name="toggle">
+    <div id="search">
+      <input type="text" placeholder="SEARCH KEYWORD">
+      <button>SEARCH</button>
+    </div>
+
+    <label for="toggle-user"><i class="fas fa-user"></i></label>
+    <input type="radio" id="toggle-user" name="toggle">
+    <div id="user">
+      <div class="title">Username</div>
+      <input type="text" placeholder="LOGIN">
+      <div class="title">Password</div>
+      <input type="text" placeholder="PASSWORD">
+      <input type="checkbox" id="remember">
+      <label for="remember">Remember Me</label>
+      <button>LOG IN</button>
+      <p>Forgot Your Password?</p>
+    </div>
+
+    <label id="ham" for="toggle-sidebar"><img src="./img/hamburger.png" height="20px"></label>
+    <input type="checkbox" id="toggle-sidebar">
+    <!-- <div id="sidebar">
+      <div id="home">
+        <button>HOME</button>
+      </div>
+      <div id="pages">
+        <button>PAGES</button>
+      </div>
+      <div id="programs">
+        <button>PROGRAMS</button>
+      </div>
+      <div id="gallery">
+        <button>GALLERY</button>
+      </div>
+      <div id="blog">
+        <button>BLOG</button>
+      </div>
+      <div id="shop">
+        <button>SHOP</button>
+      </div>
+      <div id="contacts">
+        <button>CONTACTS</button>
+      </div>
+      <div id="free">
+        <button>FREE CONSULTATION</button>
+      </div>
+    </div> -->
+
+  </div>
+  <section id="section1">
+    <div id="banner" class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/slide_01.jpg">
+          <div class="text">
+            <h6 class="scale-up-ver-top">WELCOME TO NUTRITIA</h6>
+            <div class="h1-1 scale-up-ver-bottom">Get In Shape Faster.</div>
+            <div class="h1-2 animate__animated animate__bounceIn wow" data-wow-duration="1.2s" data-wow-delay="1s">Live
+              Your
+              Happy Life!</div>
+            <div class="p01 animate__animated animate__bounceIn wow" data-wow-duration="1.2s" data-wow-delay="1.4s">
+              Looking
+              after
+              your health today gives you a better hope for tomorrow.
+              When you’ve got your health, you got everything.</div>
+            <button id="about" class="scale-up-bottom">ABOUT ME</button>
+            <button id="contact" class="scale-up-bottom2">MY CONTACTS</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/slide_02.jpg">
+          <div class="text">
+            <h6 class="scale-up-ver-top">WELCOME TO NUTRITIA</h6>
+            <div class="h1-1 scale-up-ver-bottom">Eat Right, Be Bright.</div>
+            <div class="h1-2 animate__animated animate__bounceIn wow" data-wow-duration="1.2s" data-wow-delay="1s">
+              Stay Strong, Live Long!
+            </div>
+            <div class="p01 animate__animated animate__bounceIn wow" data-wow-duration="1.2s" data-wow-delay="1.4s">
+              Looking after your health today gives you a better hope for tomorrow.
+              When you’ve got your health, you got everything.</div>
+            <button id="about" class="scale-up-bottom">ABOUT ME</button>
+            <button id="contact" class="scale-up-bottom2">MY CONTACTS</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+  <section id="section2">
+    <div class="row">
+      <div class="card">
+        <img src="./img/img_3-1170x780.jpg" alt="">
+        <h2>Personal <b>Nutrition Plan</b></h2>
+        <div class="line"></div>
+        <div class="text">
+          <p>Intermittent Fasting is a form of time-restricting way of eating which involves consuming food during an
+            8-hour window</p>
+        </div>
+        <button>READ MORE</button>
+      </div>
+      <div class="card">
+        <img src="./img/img_6-1170x780.jpg" alt="">
+        <h2>Sample Post With Youtube Video</h2>
+        <div class="line"></div>
+        <div class="text">
+          <p>Planning a daily menu isn’t difficult as long as each meal and snack has some protein, fiber, complex
+            carbohydrates,</p>
+        </div>
+        <button class="btn2">READ MORE</button>
+      </div>
+      <div class="card">
+        <img src="./img/img_7-1170x780.jpg" alt="">
+        <h2>Sample Post With Carousel
+        </h2>
+        <div class="line"></div>
+        <div class="text">
+          <p>One way to lose weight quickly is to cut back on sugars and starches, or carbohydrates.</p>
+        </div>
+        <button class="btn3">READ MORE</button>
+      </div>
+    </div>
+  </section>
+  <section id="section3">
+    <div class="row">
+      <img src="./img/one_half-4.png" alt="">
+      <div class="img"></div>
+      <div class="container">
+        <div class="text">
+          <h1>Hello, I am <b>Mary Vels</b></h1>
+          <div class="subtitle">TOUR PERSONAL DIETITIAN</div>
+          <p>I’ve helped people exactly like you - smart, ambitious, put together - figure out the one thing that eludes
+            them:
+            Their ideal weight. If you’re like lots of people I help, you don’t like how you look, avoid pictures like
+            the
+            plague, have a closet full of clothes you can’t wear, feel tired a lot, have tried working out, have tried
+            cutting
+            calories, have tried literally everything.</p>
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              <div class="li">1</div>
+              <div class="litext">150+ Private & Group Workout Sessions</div>
+            </li>
+            <li>
+              <div class="li">2</div>
+              <div class="litext">1600+ Happy Customers After Diet</div>
+            </li>
+            <li>
+              <div class="li">3</div>7 to 60 Days Nutrition Program
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="section4">
+    <h1>What <b>Clients Say</b></h1>
+    <div class="subtitle">STORIES OF SUCCESS OF OUR CLIENTS</div>
+  </section>
+  <div id="feedback" class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./img/face_8.jpg" class="authorAvatar">
+        <div class="text">
+          <div class="content">“For me personally, a healthy way of living was a mysterious and unrealistic theory that
+            I was never in a mood to explore. No, with your help and guidance I am to start a new life!"
+          </div>
+          <h6 class="authorName">Marguerite <b>Blair</b></h6>
+          <span class="authorJob">Marketer / client</span>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/face_9.jpg" class="authorAvatar">
+        <div class="text">
+          <div class="content">“Why, I still can't believe how quickly and harmlessly I got in a great shape after
+            having a child! We should all remember about choosing the right food, for us and those who we love."
+          </div>
+          <h6 class="authorName" class="">Dorothy <b>Greer</b></h6>
+          <span class="authorJob">Make-up artist / client</span>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/face_7.jpg" class="authorAvatar">
+        <div class="text">
+          <div class="content">
+            “Within just a couple days of starting Mary's coaching program, I had more energy than I ever had and just 2
+            weeks in I dropped 6 pounds! For the first time in my adult life I’ve dropped a pants size!"
+          </div>
+          <h6 class="authorName">Christina <b>Franklin</b></h6>
+          <span class="authorJob">Student / client</span>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <section id="section5">
+    <h1>How <b>It Works?</b></h1>
+    <div class="subtitle">START YOUR JOURNEY TODAY</div>
+    <div class="methodwrap">
+      <div class="method">
+        <a href="#"><img src="./img/img_25.png"></a>
+        <h5><a href="#">Follow The <b>Regime</b></a></h5>
+        <p>Observance of your own regime of the day, nutrition and exercise is the key to success.</p>
+      </div>
+      <div class="method">
+        <a href="#"><img src="./img/img_26.png"></a>
+        <h5><a href="#">Work For <b>Result</b></a></h5>
+        <p>Physical exercise is also important for your health, beauty and well-being.</p>
+      </div>
+      <div class="method">
+        <a href="#"><img src="./img/img_27.png"></a>
+        <h5><a href="#">Eat <b>Healthy</b></a></h5>
+        <p>Only natural organic food will make our body healthy and strong.</p>
+      </div>
+      <div class="method">
+        <a href="#"><img src="./img/img_28.png"></a>
+        <h5><a href="#">Enjoy <b>Your Life</b></a></h5>
+        <p>See how your life becomes a pleasant adventure, full of bright colors and fun activities.</p>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section id="section6">
+    <div class="text">
+      <h1>Story Of <b>Success</b></h1>
+      <div class="subtitle">GREGORY MORGANTIN’S STORY</div>
+      <p>I feel super positive and energetic - the feelings that I did not know of before.</p>
+      <p>For me personally, a healthy way of living was a mysterious and unrealistic theory that I was never in a mood
+        to
+        explore. No, with your help and guidance I am to start a new life! It is always easier to go with fast food, but
+        we forget that neglecting your diet costs us our long and happy life. You don't have to be a chef to be able to
+        eat properly. Everyone can afford organic green veggies, fresh fruits and protein today. All you have to do is
+        make a little effort, really.</p>
+      <div class="signature">
+        <div class="text">
+          <div class="authorName">Gregory <b>Morgantin</b></div>
+          <span class="authorJob">MANAGER / client</span>
+        </div>
+        <img src="./img/signature.png">
+      </div>
+    </div>
+    <div class="slider-wrap">
+      <div class='slider-container'>
+        <div class='slider-img background-img'></div>
+        <div class='slider-img foreground-img'></div>
+        <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+        <div class='slider-button'></div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrap">
+      <div class="news">
+        <h3>Latest <b>News</b></h3>
+        <p>Personal Nutrition Plan</p>
+        <div class="subtitle">FEBRUARY 11, 2021</div>
+        <p>Sample Post With Youtube Video</p>
+        <div class="subtitle">FEBRUARY 11, 2021</div>
+      </div>
+      <div class="nutritia">
+        <img src="./img/footer_logo.png">
+        <div>
+          <i class="fas fa-map-marker-alt"></i>
+          <p>358 Beree St, Fresno, California, USA</p>
+        </div>
+        <div>
+          <i class="fas fa-envelope"></i>
+          <a href="#">
+            <p>example@example.com</p>
+          </a>
+        </div>
+        <div>
+          <i class="far fa-clock"></i>
+          <p>Mon-Fri: 8:00-20:00</p>
+        </div>
+        <div class="socialmedia">
+          <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="google"><i class="fab fa-google"></i></a>
+          <a href="#" class="linkedin-in"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="pinterest-p"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="newsletter">
+        <h3>Our <b>Newsletter</b></h3>
+        <p>Subscribe to our Newsletter for latest news.</p>
+        <input type="text" placeholder="EMAIL ADDRESS">
+        <button>SEND NOW</button>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Copyright 2021 Best Diet, Inc. - All rights reserved.</p>
+    </div>
+  </footer>
+  <a href="#" class="top">
+    <div class="topbtn"></div>
+  </a>
+<!-- wow動畫 -->
+  <script src="./js/wow.min.js"></script>
+  <script>
+    var wow = new WOW(
+      {
+        boxClass: 'wow',      // default
+        animateClass: 'animate__animated',
+        offset: 0,          // default
+        mobile: true,       // default
+        live: true        // default
+      }
+    )
+    wow.init();
+  </script>
+<!-- banner動畫 -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('#banner', {
+      direction: 'horizontal',
+      loop: true, 
+      speed: 600, 
+      autoplay: {
+        delay: 4000 
+      },
+      effect: "fade",
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+    const swiper2 = new Swiper('#feedback', {
+      direction: 'horizontal',
+      loop: true, 
+      speed: 300, 
+      autoplay: {
+        delay: 10000 
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
+  <!-- before/after slide -->
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script>
+    $("#slider").on("input change", (e) => {
+      const sliderPos = e.target.value;
+      // Update the width of the foreground image
+      $('.foreground-img').css('width', `${sliderPos}%`)
+      // Update the position of the slider button
+      $('.slider-button').css('left', `calc(${sliderPos}% - 25px)`)
+    });
+
+  </script>
+  
+</body>
+
+</html>
