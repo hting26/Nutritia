@@ -57,21 +57,21 @@
   <!-- </div> -->
   <div id="menu">
     <label for="toggle-cart"><i class="fas fa-shopping-cart"></i></label>
-    <input type="radio" id="toggle-cart" name="toggle">
+    <input type="radio" id="toggle-cart" name="toggle" class="no" value="1">
     <div id="cart">
       <div class="title">Cart</div>
       <div class="text">No products in the cart.</div>
     </div>
 
     <label for="toggle-search"><i class="fas fa-search"></i></label>
-    <input type="radio" id="toggle-search"  name="toggle">
+    <input type="radio" id="toggle-search" name="toggle" class="no" value="2">
     <div id="search">
       <input type="text" placeholder="SEARCH KEYWORD">
       <button>SEARCH</button>
     </div>
 
     <label for="toggle-user"><i class="fas fa-user"></i></label>
-    <input type="radio" id="toggle-user" name="toggle">
+    <input type="radio" id="toggle-user" name="toggle" class="no" value="3">
     <div id="user">
       <div class="title">Username</div>
       <input type="text" placeholder="LOGIN">
@@ -82,10 +82,14 @@
       <button>LOG IN</button>
       <p>Forgot Your Password?</p>
     </div>
+    <input type="radio" name="toggle" class="no" value="null" style="display:none">
 
     <label id="ham" for="toggle-sidebar"><img src="./img/hamburger.png" height="20px"></label>
     <input type="checkbox" id="toggle-sidebar">
-    <!-- <div id="sidebar">
+    <div id="sidebar">
+      <div id="close">
+        <label for="toggle-sidebar"><i class="fas fa-times"></i></label>
+      </div>
       <div id="home">
         <button>HOME</button>
       </div>
@@ -110,7 +114,7 @@
       <div id="free">
         <button>FREE CONSULTATION</button>
       </div>
-    </div> -->
+    </div>
 
   </div>
   <section id="section1">
@@ -121,10 +125,10 @@
           <div class="text">
             <h6 class="scale-up-ver-top">WELCOME TO NUTRITIA</h6>
             <div class="h1-1 scale-up-ver-bottom">Get In Shape Faster.</div>
-            <div class="h1-2 animate__animated animate__bounceIn wow" data-wow-duration="1.2s" data-wow-delay="1s">Live
+            <div class="h1-2 wow animate__bounceIn" data-wow-duration="1.2s" data-wow-delay="1s">Live
               Your
               Happy Life!</div>
-            <div class="p01 animate__animated animate__bounceIn wow" data-wow-duration="1.2s" data-wow-delay="1.4s">
+            <div class="p01 wow animate__bounceIn" data-wow-duration="1.2s" data-wow-delay="1.4s">
               Looking
               after
               your health today gives you a better hope for tomorrow.
@@ -138,10 +142,10 @@
           <div class="text">
             <h6 class="scale-up-ver-top">WELCOME TO NUTRITIA</h6>
             <div class="h1-1 scale-up-ver-bottom">Eat Right, Be Bright.</div>
-            <div class="h1-2 animate__animated animate__bounceIn wow" data-wow-duration="1.2s" data-wow-delay="1s">
+            <div class="h1-2 wow animate__bounceIn" data-wow-duration="1.2s" data-wow-delay="1s">
               Stay Strong, Live Long!
             </div>
-            <div class="p01 animate__animated animate__bounceIn wow" data-wow-duration="1.2s" data-wow-delay="1.4s">
+            <div class="p01 wow animate__bounceIn" data-wow-duration="1.2s" data-wow-delay="1.4s">
               Looking after your health today gives you a better hope for tomorrow.
               When you’ve got your health, you got everything.</div>
             <button id="about" class="scale-up-bottom">ABOUT ME</button>
@@ -267,22 +271,22 @@
     <h1>How <b>It Works?</b></h1>
     <div class="subtitle">START YOUR JOURNEY TODAY</div>
     <div class="methodwrap">
-      <div class="method">
+      <div class="method wow animate__fadeInUp" >
         <a href="#"><img src="./img/img_25.png"></a>
         <h5><a href="#">Follow The <b>Regime</b></a></h5>
         <p>Observance of your own regime of the day, nutrition and exercise is the key to success.</p>
       </div>
-      <div class="method">
+      <div class="method wow animate__fadeInUp" data-wow-delay=".3s">
         <a href="#"><img src="./img/img_26.png"></a>
         <h5><a href="#">Work For <b>Result</b></a></h5>
         <p>Physical exercise is also important for your health, beauty and well-being.</p>
       </div>
-      <div class="method">
+      <div class="method wow animate__fadeInUp" data-wow-delay=".6s">
         <a href="#"><img src="./img/img_27.png"></a>
         <h5><a href="#">Eat <b>Healthy</b></a></h5>
         <p>Only natural organic food will make our body healthy and strong.</p>
       </div>
-      <div class="method">
+      <div class="method wow animate__fadeInUp" data-wow-delay=".9s">
         <a href="#"><img src="./img/img_28.png"></a>
         <h5><a href="#">Enjoy <b>Your Life</b></a></h5>
         <p>See how your life becomes a pleasant adventure, full of bright colors and fun activities.</p>
@@ -320,14 +324,14 @@
   </section>
   <footer>
     <div class="wrap">
-      <div class="news">
+      <div class="news wow animate__fadeInUp">
         <h3>Latest <b>News</b></h3>
         <p>Personal Nutrition Plan</p>
         <div class="subtitle">FEBRUARY 11, 2021</div>
         <p>Sample Post With Youtube Video</p>
         <div class="subtitle">FEBRUARY 11, 2021</div>
       </div>
-      <div class="nutritia">
+      <div class="nutritia wow animate__fadeInUp" data-wow-delay=".3s">
         <img src="./img/footer_logo.png">
         <div>
           <i class="fas fa-map-marker-alt"></i>
@@ -351,7 +355,7 @@
           <a href="#" class="pinterest-p"><i class="fab fa-pinterest-p"></i></a>
         </div>
       </div>
-      <div class="newsletter">
+      <div class="newsletter wow animate__fadeInUp" data-wow-delay=".6s">
         <h3>Our <b>Newsletter</b></h3>
         <p>Subscribe to our Newsletter for latest news.</p>
         <input type="text" placeholder="EMAIL ADDRESS">
@@ -365,29 +369,29 @@
   <a href="#" class="top">
     <div class="topbtn"></div>
   </a>
-<!-- wow動畫 -->
+  <!-- wow動畫 -->
   <script src="./js/wow.min.js"></script>
   <script>
     var wow = new WOW(
       {
-        boxClass: 'wow',      // default
+        boxClass: 'wow',
         animateClass: 'animate__animated',
-        offset: 0,          // default
-        mobile: true,       // default
-        live: true        // default
+        offset: 0,
+        mobile: true,
+        live: true
       }
     )
     wow.init();
   </script>
-<!-- banner動畫 -->
+  <!-- banner動畫 -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('#banner', {
       direction: 'horizontal',
-      loop: true, 
-      speed: 600, 
+      loop: true,
+      speed: 600,
       autoplay: {
-        delay: 4000 
+        delay: 4000
       },
       effect: "fade",
       navigation: {
@@ -397,10 +401,10 @@
     });
     const swiper2 = new Swiper('#feedback', {
       direction: 'horizontal',
-      loop: true, 
-      speed: 300, 
+      loop: true,
+      speed: 300,
       autoplay: {
-        delay: 10000 
+        delay: 10000
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -419,8 +423,20 @@
       $('.slider-button').css('left', `calc(${sliderPos}% - 25px)`)
     });
 
+    // radio 取消選取
+    var checked_val = "null";
+    $(".no").on("click", function () {
+      if ($(this).val() == checked_val) {
+        $('input[name=toggle][value=null]').prop("checked", true);
+        checked_val = "null";
+      } else {
+        checked_val = $(this).val();
+        $('input[name=toggle][value=null]').removeProp("checked");
+      }
+    });
+
   </script>
-  
+
 </body>
 
 </html>
