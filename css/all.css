@@ -778,6 +778,38 @@ footer button:hover{
   opacity: 1;
   transform: translateY(3px);
 }
+#section7 {
+  background-color: #f2f2f2;
+  padding-top: 50px;
+}
+.category {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+.category a {
+  margin: .5rem 1rem;
+  text-decoration: none;
+  color: #3a3630;
+  transition: .5s;
+}
+.category a:hover {
+  color: var(--orange);
+}
+.category a:first-child{
+  color: var(--orange);
+}
+#photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .5s;
+}
+#photo .swiper-slide-active img{
+  transform: scale(1.1);
+}
 /* -----------------------------------------------------768 */
 @media (min-width:768px) {
   

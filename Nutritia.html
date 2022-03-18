@@ -352,6 +352,39 @@
       </div>
     </div>
   </section>
+  <section id="section7">
+    <div class="category">
+      <a href="#">ALL</a>
+      <a href="#">TRAININGS</a>
+      <a href="#">EXERCISES</a>
+      <a href="#">CUSTOMERS</a>
+      <a href="#">NUTRITION</a>
+      <a href="#">CONSULTATIONS</a>
+      <a href="#">CUSTOMERS</a>
+    </div>
+    <div id="photo" class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/swiper1.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper2.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper3.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper4.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper5.jpg">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/swiper6.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
   <footer>
     <div class="wrap">
       <div class="news wow animate__fadeInUp">
@@ -413,7 +446,7 @@
     )
     wow.init();
   </script>
-  <!-- banner動畫 -->
+  <!-- swiper -->
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('#banner', {
@@ -439,6 +472,25 @@
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      }
+    });
+    const swiper3 = new Swiper('#photo', {
+      direction: 'horizontal',
+      loop: true,
+      speed: 1000,
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3000
+      },
+      slidesPerView: 3,
+      breakpoints: {
+        768: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 6,
+        }
       }
     });
   </script>
