@@ -382,7 +382,7 @@ text-align: left;
 #section2 {
   font-family: 'Raleway', sans-serif;
 }
-#section2 .row {
+.row {
   padding-top: 3rem;
   padding-bottom: 1rem;
   display: flex;
@@ -403,8 +403,9 @@ text-align: left;
   line-height: 2rem;
   font-weight: 300;
   padding: 1rem 1rem;
+  border-radius: 4px;
 }
-#section2 img:hover {
+#section2 .card:hover img {
   filter: brightness(0.6);
   cursor: pointer;
 }
@@ -433,7 +434,6 @@ b{
 #section2 button {
   width: 200px;
   height: 3rem;
-  border: none;
   border-radius: 30px;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -449,11 +449,11 @@ b{
   color: #000;
   transition: none;
 }
-#section2 .btn2{
+#section2 .btn2, #section8 .btn2{
   color: var(--orange);
   border-color: var(--orange);
 }
-#section2 .btn3{
+#section2 .btn3, #section8 .btn3{
   color: var(--green);
   border-color: var(--green);
 }
@@ -780,12 +780,12 @@ footer button:hover{
 }
 #section7 {
   background-color: #f2f2f2;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 .category {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   flex-wrap: wrap;
 }
 .category a {
@@ -809,6 +809,89 @@ footer button:hover{
 }
 #photo .swiper-slide-active img{
   transform: scale(1.1);
+}
+#section8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0;
+}
+#section8>.subtitle {
+  color: var(--green);
+}
+#section8 .priceCard {
+  max-width: 400px;
+  width: 84%;
+  margin-top: 1rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 12px 1px rgb(228, 228, 228);
+  padding-bottom: 60px;
+}
+#section8 .cardimg {
+  height: 100px;
+  color: #fff;
+  font-size: 34px;
+  line-height: 100px;
+  font-family: 'Raleway', sans-serif;
+}
+.price {
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 50px;
+}
+.price b {
+  font-size: 60px;
+  font-weight: 300;
+}
+.img1 {
+  background: linear-gradient( rgba(252, 220, 63, 0.8), rgba(252, 220, 63, 0.8)),
+    url(../img/price_img2.jpg)no-repeat 0% 50%/cover;
+  border-radius: 4px 4px 0 0;
+}
+.img2 {
+  background: linear-gradient( rgba(249, 164, 80, 0.8), rgba(249, 164, 80, 0.8)),
+    url(../img/price_img3.jpg)no-repeat 0% 50%/cover;
+    border-radius: 4px 4px 0 0;
+}
+.img3 {
+  background: linear-gradient( rgba(162, 204, 65, 0.8), rgba(162, 204, 65, 0.8)),
+    url(../img/price_img1.jpg)no-repeat 0% 50%/cover;
+    border-radius: 4px 4px 0 0;
+}
+.period {
+  color: #b4b4b4;
+}
+.include {
+  color: #787878;
+  line-height: 4rem;
+  font-weight: 300;
+}
+.include hr {
+  width: 60%;
+}
+#section8 button {
+  width: 130px;
+  height: 3.8rem;
+  border-radius: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  background: white;
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+  transition: .5s;
+}
+#section8 button:hover{
+  color: #000;
+  transition: none;
+}
+#section8 .row {
+  width: 100%;
 }
 /* -----------------------------------------------------768 */
 @media (min-width:768px) {
@@ -843,7 +926,7 @@ footer button:hover{
     width: 30%;
     margin: 0 1%;
   }
-  #section2 .row {
+  .row {
     align-items: flex-start;
   }
   #section2 .text{
@@ -855,6 +938,10 @@ footer button:hover{
   #user {
     width: 500px;
     border: 1px solid var(--grey);
+  }
+  #section8 .priceCard {
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
 /* --------------------------------------------------1200 */
@@ -962,6 +1049,10 @@ footer button:hover{
   .slider-container{
     display: inline-block;
     flex-direction: row;
+  }
+  #section8 .priceCard {
+    width: 30%;
+    margin: 0 1%;
   }
   footer .wrap{
     display: flex;
