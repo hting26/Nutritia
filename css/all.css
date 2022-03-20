@@ -361,21 +361,21 @@ text-align: left;
   margin: 1.8rem 0;
   transition: .5s;
 }
-#section1 #about {
+.greenBtn {
   background-color: var(--green);
   color: white;
   margin-right: 1rem;
 }
-#section1 #about:hover {
+.greenBtn:hover {
   color: #000;
   transition: none;
 }
-#section1 #contact {
+#section1 .contact {
   background-color: white;
   color: var(--yellow);
   border: 1px solid var(--yellow);
 }
-#section1 #contact:hover {
+#section1 .contact:hover {
   color: #000;
   transition: none;
 }
@@ -893,6 +893,51 @@ footer button:hover{
 #section8 .row {
   width: 100%;
 }
+#section9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 84%;
+  margin: 0 auto;
+  padding: calc(100px + 5vw) 0;
+}
+#section9 .subtitle{
+  color: var(--orange);
+}
+#section9 input{
+  background: transparent;
+  max-width: 450px;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  color: #787878;
+  border:1px solid rgba(120, 120, 120, 0.5);
+  font-style: italic;
+  font-weight: 100;
+  padding-left: 2rem;
+  margin: .5rem;
+  }
+.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 1rem;
+}
+#section9 button {
+  display: block;
+  width: 160px;
+  height: 3rem;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  /* margin: 1.8rem 0; */
+  transition: .5s;
+}
 /* -----------------------------------------------------768 */
 @media (min-width:768px) {
   
@@ -1064,5 +1109,11 @@ footer button:hover{
   }
   .newsletter input{
     width: 85%;
+  }
+  .input {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
