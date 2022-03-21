@@ -27,6 +27,10 @@
 </head>
 
 <body>
+  <!-- loading -->
+  <div id="loading">
+    <img src="./img/preloader.png" class="fa-spin">
+  </div>
   <!-- <div class="container"> -->
   <div class="header">
     <img class="logo" src="http://webdesign-finder.com/nutritia/wp-content/uploads/2018/03/logo.png" alt="">
@@ -592,7 +596,12 @@
         $('input[name=toggle][value=null]').removeProp("checked");
       }
     });
-
+    // loading
+    const loading = document.getElementById('loading')
+    window.onload = () => {
+      loading.style.display = 'none'
+      document.body.style.overflow = 'visible'
+    }
   </script>
 
 </body>
