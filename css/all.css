@@ -160,7 +160,7 @@ font-weight: 600;
   width: 100%;
   background-color: white;
   position: absolute;
-  padding: 2% 8%;
+  padding: 1rem 2rem ;
   top: 60px;
   border-bottom: 1px solid var(--grey);
 }
@@ -935,8 +935,14 @@ footer button:hover{
   font-weight: 800;
   letter-spacing: 1px;
   cursor: pointer;
-  /* margin: 1.8rem 0; */
   transition: .5s;
+}
+.sec9 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 /* -----------------------------------------------------768 */
 @media (min-width:768px) {
@@ -981,7 +987,7 @@ footer button:hover{
   #cart,
   #search,
   #user {
-    width: 500px;
+    width: 400px;
     border: 1px solid var(--grey);
   }
   #section8 .priceCard {
