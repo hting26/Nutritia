@@ -11,7 +11,6 @@ body{
   background-color: var(--green);
   color: white;
 }
-/* font-family: 'Raleway', sans-serif; */
 :root{
   --yellow:#fcdd3f;
   --orange:#f9a450;
@@ -21,8 +20,6 @@ body{
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 2em;
-  /* margin-top: 0.67em;
-  margin-bottom: 0.67em; */
 }
 h2 {
   font-size: 1.5em;
@@ -857,17 +854,17 @@ footer button:hover{
 }
 .img1 {
   background: linear-gradient( rgba(252, 220, 63, 0.8), rgba(252, 220, 63, 0.8)),
-    url(../img/price_img2.jpg)no-repeat 0% 50%/cover;
+    url(../img/price_img2.jpg) no-repeat 0% 50%/cover;
   border-radius: 4px 4px 0 0;
 }
 .img2 {
   background: linear-gradient( rgba(249, 164, 80, 0.8), rgba(249, 164, 80, 0.8)),
-    url(../img/price_img3.jpg)no-repeat 0% 50%/cover;
+    url(../img/price_img3.jpg) no-repeat 0% 50%/cover;
     border-radius: 4px 4px 0 0;
 }
 .img3 {
   background: linear-gradient( rgba(162, 204, 65, 0.8), rgba(162, 204, 65, 0.8)),
-    url(../img/price_img1.jpg)no-repeat 0% 50%/cover;
+    url(../img/price_img1.jpg) no-repeat 0% 50%/cover;
     border-radius: 4px 4px 0 0;
 }
 .period {
@@ -955,7 +952,7 @@ footer button:hover{
 }
 /* -----------------------------------------------------768 */
 @media (min-width:768px) {
-  
+
   .header{
     padding: 1rem 4rem;
   }
@@ -969,7 +966,7 @@ footer button:hover{
     flex: 0 0 auto;
     display: flex;
   }
-  
+
 .info:nth-child(2):before,
 .info:nth-child(3):before{
   content: "|";
